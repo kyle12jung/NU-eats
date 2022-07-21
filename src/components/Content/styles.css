@@ -1,0 +1,9 @@
+.categories {
+    display: flex;
+    flex: 1;
+    flexDirection: row;
+}
+
+.categories .category {
+    margin: 10px;
+}
