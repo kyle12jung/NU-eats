@@ -4,7 +4,7 @@ import { dummy_data } from '../../dummy_data';
 import Header from './Header';
 import CardList from '../CardList/CardList';
 
-const CATEGORIES = ['Burgers', 'Pizza', 'Chinese', 'Korean', 'Japanese', 'Thai', 'Mexican', 'Brunch', "Indian", "Mediterranean"];
+const CATEGORIES = ['Burgers', 'Pizza', 'Chinese', 'Korean', 'Japanese', 'Thai', 'Mexican', 'Brunch', 'Indian', 'Mediterranean'];
 
 function Body() {
   const [category, setCategory] = useState('');

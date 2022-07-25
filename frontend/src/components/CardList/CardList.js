@@ -23,12 +23,12 @@ function CardList({ category }) {
 
 	// Only run once in render
 	useEffect(() => {
-		fetchData()
-	}, [])
+		fetchData(category)
+	}, [category])
 
-	const fetchData = () => {
+	const fetchData = (category) => {
 		setLoading(true);
-		fetch('http://localhost:3001/')
+		fetch(`http://localhost:3001/${category}/0`)
 		.then(response => response.json())
 		.then(data => JSON.stringify(data))
 		.then(stringifiedData => JSON.parse(stringifiedData))
