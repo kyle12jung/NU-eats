@@ -1,6 +1,13 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom';
 
-function Post({ name, location, zipCode, coordinates, phone, price, rating }) {
+
+function Post() {
+  const loc = useLocation();
+  const data = loc.state;
+  console.log(data);
+  const { id, name, location, zipCode, coordinates, phone, price, rating } = data;
+  
   return (
     <div className='post'>
         <h1><b>{name}</b></h1>

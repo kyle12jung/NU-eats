@@ -30,6 +30,7 @@ function CardList({ category }) {
             // console.log(restaurant)
             <Card 
               key={restaurant.id}
+              id={restaurant.id}
               name={restaurant.name}
               location={restaurant.location.address1}
               zipCode={restaurant.zip_code}
