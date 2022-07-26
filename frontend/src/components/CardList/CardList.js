@@ -6,15 +6,6 @@ import Card from '../Card/Card'
 
 function CardList({ category }) {
   const [restaurants, setRestaurants] = useState([]);
-  // const [restaurant, setRestaurant] = useState({});
-	// const [restaurantName, setRestaurantName] = useState("");
-	// const [categories, setCategories] = useState([]);
-	// const [location, setLocation] = useState("");
-  // const [coordinates, setCoordinates] = useState([]);
-  // const [zipcode, setZipcode] = useState(0);
-	// const [phone, setPhone] = useState(0);
-	// const [price, setPrice] = useState('');
-	// const [rating, setRating] = useState(0);
 
 	// Only run whenever category changes
 	useEffect(() => {
