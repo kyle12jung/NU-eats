@@ -33,7 +33,7 @@ function CardList({ category }) {
               id={restaurant.id}
               name={restaurant.name}
               location={restaurant.location.address1}
-              zipCode={restaurant.zip_code}
+              zipCode={restaurant.location.zip_code}
               coordinates={restaurant.coordinates}
               phone={restaurant.phone}
               price={restaurant.price}
