@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './styles.css'
 import CardList from '../CardList/CardList';
 
-const CATEGORIES = ['Burgers', 'Pizza', 'Chinese', 'Korean', 'Japanese', 'Thai', 'Mexican', 'Brunch', 'Indian', 'Mediterranean'];
+const CATEGORIES = ['Burgers', 'Pizza', 'Chinese', 'Korean', 'Japanese', 'Thai', 'Mexican', 'Brunch', 'Mediterranean'];
 
 function Body() {
   const [category, setCategory] = useState('');

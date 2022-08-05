@@ -17,13 +17,13 @@ router.get('/', (req, res) => {
     // }).catch(e => {
     //     console.log(e);
     // });
-    res.send("NU EATS API ENDPOINT: INDIAN")
+    res.send("NU EATS API ENDPOINT: KOREAN")
 })
 
 router.get('/:id', (req, res) => {
     client.search({
         location: '60201',
-        categories: 'indian',
+        categories: 'pan asian',
         offset: req.params.id,
         limit: '50',
     }).then(response => {

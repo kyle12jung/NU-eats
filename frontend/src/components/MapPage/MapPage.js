@@ -17,7 +17,7 @@ function MapPage({ name, coordinates }) {
       />
       <Marker position={position}>
         <Popup position={position}>
-          A pretty CSS3 popup. <br /> Easily customizable.
+          {name}
         </Popup>
       </Marker>
     </MapContainer>

@@ -20,7 +20,7 @@ function Card({ id, name, location, zipCode, coordinates, phone, price, rating }
 			<p>Price: {price}</p>
 			<Link 
 				to={`/posts/${id}`}
-				state={restaurantData}>See More</Link>
+				state={restaurantData}>Details</Link>
 		</ul>
 	)
 }

@@ -1,3 +1,7 @@
+.header {
+    margin: 20px;
+}
+
 .categories {
     display: flex;
     flex: 1;

@@ -2,3 +2,13 @@
   width: 50vh; 
   height: 50vh;
 }
+
+#root {
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-style: solid;
+}
+
+li {
+  list-style-type: none;
+}
+
