@@ -10,6 +10,7 @@ function CardList({ category }) {
   const visible = useRef(false);
   const newDataFetched = useRef(false)
   const prevRestaurants = useRef([]);
+  const nothingToFetch = useRef(false);
 
 
   const fetchData = async (category, id=0) => {
@@ -19,13 +20,18 @@ function CardList({ category }) {
     const parsedData = await JSON.parse(stringifiedData);
     const evanstonFiltered = parsedData.filter(unfiltered => unfiltered.location.zip_code === '60201');
     console.log(evanstonFiltered)
+    nothingToFetch.current = true ? !evanstonFiltered.length : false;
     const allRestaurants = [...prevRestaurants.current, ...evanstonFiltered]
     setRestaurants(allRestaurants)
     visible.current = !visible.current;
+    if (id === 0) newDataFetched.current = false;
+    console.log(newDataFetched.current)
+    // console.log(visible.current)
   }
-
+  
   const handleShowMore = () => {
-    newDataFetched.current = !newDataFetched.current;
+    newDataFetched.current = true;
+    console.log(newDataFetched.current)
     fetchData(category, 50)
       .catch(console.error);
   }
@@ -63,7 +69,11 @@ function CardList({ category }) {
           }
       </li>
       {
-        visible.current && <ShowMore restaurants={restaurants} newDataFetched={newDataFetched} handleShowMore={handleShowMore}/>
+        visible.current && <ShowMore restaurants={restaurants} newDataFetched={newDataFetched.current} handleShowMore={handleShowMore}/>
+      }
+      {
+        newDataFetched.current && nothingToFetch &&
+        <p>That's it!</p>
       }
     </>
   )

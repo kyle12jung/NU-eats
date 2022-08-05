@@ -11,10 +11,6 @@ const ShowMore = ({ newDataFetched, handleShowMore }) => {
               Show More
         </button>
       }
-      {
-        newDataFetched &&
-        <p>That's it!</p>
-      }
     </>
   )
 };
