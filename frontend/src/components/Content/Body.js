@@ -14,7 +14,9 @@ function Body() {
   const renderCategories = () => {
 		return CATEGORIES.map((cat) => (
 			<div className='category'>
-				<button onClick={() => handleClick(cat)}>{cat}</button>
+				<button 
+          className='category-button'
+          onClick={() => handleClick(cat)}>{cat}</button>
 			</div>
 		))
 	}

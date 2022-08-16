@@ -5,7 +5,9 @@
 
 #root {
   font-family: "Lucida Console", "Courier New", monospace;
-  border-style: solid;
+  margin-top: 40px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 li {

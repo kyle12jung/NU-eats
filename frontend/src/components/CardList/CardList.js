@@ -64,6 +64,7 @@ function CardList({ category }) {
                 phone={restaurant.phone}
                 price={restaurant.price}
                 rating={restaurant.rating}
+                image={restaurant.image_url}
                 />
             ))
           }
@@ -73,7 +74,7 @@ function CardList({ category }) {
       }
       {
         newDataFetched.current && nothingToFetch &&
-        <p>That's it!</p>
+        <p className='list-end'>That's it!</p>
       }
     </>
   )

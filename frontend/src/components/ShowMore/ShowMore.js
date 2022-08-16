@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import './styles.css'
 
 const ShowMore = ({ newDataFetched, handleShowMore }) => {
-  const [buttonVisible, setButtonVisible] = useState(false);
 
   return (
     <>
       {
         !newDataFetched &&
-        <button onClick={handleShowMore}>
+        <button onClick={handleShowMore} className='showmore-button'>
               Show More
         </button>
       }
