@@ -25,14 +25,12 @@ function CardList({ category }) {
     setRestaurants(allRestaurants)
     visible.current = true;
     if (id === 0) newDataFetched.current = false;
-    console.log(newDataFetched.current)
     // console.log(visible.current)
   }
   
   const handleShowMore = () => {
     newDataFetched.current = true;
     visible.current = false;
-    console.log(newDataFetched.current)
     fetchData(category, 50)
       .catch(console.error);
   }

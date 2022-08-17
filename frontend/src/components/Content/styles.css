@@ -1,5 +1,78 @@
-.header h1 {
-  margin-left: 50px;
+.title {
+  background-color: initial;
+  background-image: linear-gradient(#8614f8 0, #760be0 100%);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 30px;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s cubic-bezier(.05, .03, .35, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: bottom;
+  width: 190px;
+}
+
+.title:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 14px;
+    height: 55px;
+    line-height: 55px;
+    width: 150px;
+  }
+}
+
+.about {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.about:hover {
+  background-color: #f7fafa;
+}
+
+.about:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.header-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
 }
 
 .header h2 {
@@ -55,4 +128,15 @@
 
 .category-button:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.welcome h1 {
+  font-size: 40px;
 }

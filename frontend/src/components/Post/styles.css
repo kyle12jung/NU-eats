@@ -1,3 +1,14 @@
+.leaflet-container {
+	width: 50vh; 
+	height: 60vh;
+	margin-top: 100px;
+}
+
 .post {
-    margin-left: 20px;
+	display: flex;
+}
+
+.post-content img {
+	width: 70%;
+	height: 70%;
 }
