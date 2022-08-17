@@ -23,7 +23,7 @@ function CardList({ category }) {
     nothingToFetch.current = true ? !evanstonFiltered.length : false;
     const allRestaurants = [...prevRestaurants.current, ...evanstonFiltered]
     setRestaurants(allRestaurants)
-    visible.current = !visible.current;
+    visible.current = true;
     if (id === 0) newDataFetched.current = false;
     console.log(newDataFetched.current)
     // console.log(visible.current)
@@ -31,6 +31,7 @@ function CardList({ category }) {
   
   const handleShowMore = () => {
     newDataFetched.current = true;
+    visible.current = false;
     console.log(newDataFetched.current)
     fetchData(category, 50)
       .catch(console.error);

@@ -1,16 +1,20 @@
-.header {
-    margin: 20px;
+.header h1 {
+  margin-left: 50px;
+}
+
+.header h2 {
+  text-align:center
 }
 
 .categories {
-    display: flex;
-    flex: 1;
-    flexDirection: row;
-    justify-content: center;
+  display: flex;
+  flex: 1;
+  flexDirection: row;
+  justify-content: center;
 }
 
 .categories .category {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .category-button {
